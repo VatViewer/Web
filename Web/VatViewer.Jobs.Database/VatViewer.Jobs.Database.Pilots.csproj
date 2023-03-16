@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>dotnet-VatViewer.Jobs.Database-beae4cdb-9c73-47d8-81fd-08363c42012f</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="dotenv.net" Version="3.1.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+		<PackageReference Include="StackExchange.Redis" Version="2.6.96" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\VatViewer.Shared\VatViewer.Shared.csproj" />
+	</ItemGroup>
+</Project>

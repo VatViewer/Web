@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>dotnet-VatViewer.Jobs.Datafeed-8546ce79-8855-475f-b279-2f4f3fc35631</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="dotenv.net" Version="3.1.2" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="StackExchange.Redis" Version="2.6.96" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\VatViewer.Shared\VatViewer.Shared.csproj" />
+	</ItemGroup>
+</Project>
